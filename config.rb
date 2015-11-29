@@ -43,11 +43,11 @@ require "slim"
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def demo_resources
+    sitemap.resources.select{|res| res.path =~ /^demos/}
+  end
+end
 
 set :css_dir, 'stylesheets'
 
