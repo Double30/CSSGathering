@@ -11,9 +11,14 @@
 
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   </head>
 
   <body class="<%= page_classes %>">
+    <header class="nav">
+      <h1 class="nav-logo">css gathering</h1>
+
+    </header>
     <%= yield %>
   </body>
 </html>
