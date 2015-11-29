@@ -2,6 +2,9 @@
 title: Welcome to Middleman
 ---
 
-- demo_resources.each do |res|
-  h1 = res.data.title
-  p = res.data.description
+.card-container
+  - demo_resources.each do |res|
+    .card
+      .card-preview
+      .card-title = res.data.title
+      .card-desc = res.data.description

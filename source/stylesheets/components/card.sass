@@ -1,0 +1,50 @@
+$column-number: 12
+$gutter: 10px
+$width: ($b-container-width / 3)  - ($gutter * 2)
+
+.card:nth-child(2n)
+  .card-preview
+    background-color: #333
+.card:nth-child(3n+1)
+  .card-preview
+    background-color: #3E150D
+
+.card-container
+  text-align: center
+
+.card
+  display: inline-block
+  margin-right: $gutter
+  margin-left: $gutter
+
+.card
+  width: $width
+  margin-bottom: bu(2)
+  cursor: pointer
+.card-preview
+.card-title,
+.card-desc
+  display: block
+  width: 100%
+
+.card-preview
+  height: $width
+  background-color: #345
+
+.card-title,
+.card-desc
+  padding-left: bu()
+  padding-right: bu()
+
+.card-title
+  font-size: 18px
+  line-height: 2
+  font-weight: bold
+  padding-top: bu()
+  padding-bottom: bu(0.5)
+.card-desc
+  overflow-y: hidden
+  height: $font-size * $line-height * 2
+  font-size: $font-size
+  line-height: $line-height
+  color: #777
